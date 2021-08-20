@@ -9,4 +9,4 @@
 
 ## to read:
 
-- [] filesystem chapter of Modern Operating Systems
+- [ ] filesystem chapter of Modern Operating Systems
