@@ -21,3 +21,12 @@
 
 - [ ] Chapter 15 Dynamic Programming
 - [ ] Section VI Graph Algorithms
+
+## Mathematics
+
+### Linear Algebra
+
+**Reading Material** :
+
+- Strang, Gilbert. Introduction to Linear Algebra. 5th
+- [gilbert strang 18.06sc](https://www.youtube.com/watch?v=7UJ4CFRGd-U&list=PLE7DDD91010BC51F8)
