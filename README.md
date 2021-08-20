@@ -15,7 +15,7 @@
 
 **Reading Material** :
 
-- Introduction to Algorithms: CLRS ![50%](https://progress-bar.dev/50)
+- Introduction to Algorithms: CLRS
 
 **to read**:
 
@@ -30,3 +30,38 @@
 
 - Strang, Gilbert. Introduction to Linear Algebra. 5th
 - [gilbert strang 18.06sc](https://www.youtube.com/watch?v=7UJ4CFRGd-U&list=PLE7DDD91010BC51F8)
+
+## Design Patterns
+
+**Reading Material**:
+
+- [Refactoring Guru](https://refactoring.guru/design-patterns)
+
+**To res**:
+**Creatonal**:
+
+- [ ] Prototype
+- [ ] Singlton
+
+**Structural**:
+
+- [ ] Adapter
+- [ ] Bridge
+- [ ] Composite
+- [ ] Decorator
+- [ ] Facade
+- [ ] FlyWeight
+- [ ] Proxy
+
+**Behavioral**:
+
+- [ ] Chain Of responsibility
+- [ ] Command
+- [ ] Iterator
+- [ ] Mediator
+- [ ] Memento
+- [ ] Observer
+- [ ] State
+- [ ] Strategy
+- [ ] Template Method
+- [ ] Visitor
