@@ -1,4 +1,4 @@
-# To Read List to keep track of my studies
+# Reading List
 
 ## OS
 
@@ -15,7 +15,7 @@
 
 **Reading Material** :
 
-- Introduction to Algorithms: CLRS
+- Introduction to Algorithms: CLRS ![50%](https://progress-bar.dev/50)
 
 **to read**:
 
