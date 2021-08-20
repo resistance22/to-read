@@ -37,7 +37,8 @@
 
 - [Refactoring Guru](https://refactoring.guru/design-patterns)
 
-**To res**:
+**To read**:
+
 **Creatonal**:
 
 - [ ] Prototype
