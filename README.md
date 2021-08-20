@@ -10,3 +10,14 @@
 **to read**:
 
 - [ ] filesystem chapter of Modern Operating Systems
+
+## Algorithm
+
+**Reading Material** :
+
+- Introduction to Algorithms: CLRS
+
+**to read**:
+
+- [ ] Chapter 15 Dynamic Programming
+- [ ] Section VI Graph Algorithms
