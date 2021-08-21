@@ -1,11 +1,11 @@
 
-- [OS](#os)
-- [Algorithm](#algorithm)
-- [Mathematics](#mathematics)
-  - [Linear Algebra](#linear-algebra)
-- [Design Patterns](#design-patterns)
+- [1. OS](#1-os)
+- [2. Algorithm](#2-algorithm)
+- [3. Mathematics](#3-mathematics)
+  - [3.1. Linear Algebra](#31-linear-algebra)
+- [4. Design Patterns](#4-design-patterns)
 
-## OS
+# 1. OS
 
 **Reading Material** :
 
@@ -18,7 +18,7 @@
 - [ ] Operating Systems Part III: 35-44
 - [ ] Modern Operating Systems : 10.6
 
-## Algorithm
+# 2. Algorithm
 
 **Reading Material** :
 
@@ -29,16 +29,16 @@
 - [ ] Chapter 15 Dynamic Programming
 - [ ] Section VI Graph Algorithms
 
-## Mathematics
+# 3. Mathematics
 
-### Linear Algebra
+## 3.1. Linear Algebra
 
 **Reading Material** :
 
 - Strang, Gilbert. Introduction to Linear Algebra. 5th
 - [gilbert strang 18.06sc](https://www.youtube.com/watch?v=7UJ4CFRGd-U&list=PLE7DDD91010BC51F8)
 
-## Design Patterns
+# 4. Design Patterns
 
 **Reading Material**:
 
