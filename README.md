@@ -9,7 +9,9 @@
 
 **to read**:
 
-- [ ] filesystem chapter of Modern Operating Systems
+- [x] filesystem chapter of Modern Operating Systems
+- [ ] Operating Systems Part III: 35-44
+- [ ] Modern Operating Systems : 10.6
 
 ## Algorithm
 
