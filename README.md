@@ -43,8 +43,8 @@
 
 **Creatonal**:
 
-- [ ] Prototype
-- [ ] Singlton
+- [x] ~~Prototype~~
+- [x] ~~Singlton~~
 
 **Structural**:
 
