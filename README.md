@@ -48,7 +48,7 @@
 
 **Structural**:
 
-- [x] Adapter
+- [x] ~~Adapter~~
 - [ ] Bridge
 - [ ] Composite
 - [ ] Decorator
