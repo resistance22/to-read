@@ -26,7 +26,8 @@
   - [ ] Chapter 15 Dynamic Programming
   - [ ] Section VI Graph Algorithms
 - [MIT 6.006](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-  - [ ] 1.Algorithmic thinking peak finding
+  - [x] ~~5.BST~~
+  - [ ] 6.AVL trees
 
 **to read**:
 
@@ -57,8 +58,8 @@
 **Structural**:
 
 - [x] ~~Adapter~~
-- [ ] Bridge
-- [ ] Composite
+- [x] ~~Bridge~~
+- [x] ~~Composite~~
 - [ ] Decorator
 - [ ] Facade
 - [ ] FlyWeight
