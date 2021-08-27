@@ -92,6 +92,9 @@ class BSTNode:
         else:
             parent.set_right_child(x)
 
+    def get_height(self):
+        return  self.height
+
     def display(self):
         lines, *_ = self._display_aux()
         for line in lines:
@@ -170,7 +173,7 @@ class BST:
         else:
             temp.update_height()
 
-    def get_heights(self):
+    def get_height(self):
         return self.root.height
 
     def insert(self, data):
