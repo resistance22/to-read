@@ -3,36 +3,36 @@ from random import randint
 
 class BSTNode:
     def __init__(self, data):
-        self.left = None
-        self.right = None
-        self.parent = None
-        self.height = 0
-        self.size = 1
-        self.data = data
+        self.left: 'BSTNode' or None = None
+        self.right: 'BSTNode' or None = None
+        self.parent: 'BSTNode' or None = None
+        self.height: int = 0
+        self.size: int = 1
+        self.data: int or float = data
 
-    def has_left_child(self):
+    def has_left_child(self) -> bool:
         return bool(self.left)
 
-    def set_parent(self, node):
+    def set_parent(self, node: 'BSTNode' or None):
         self.parent = node
 
     def has_right_child(self):
         return bool(self.right)
 
-    def set_left_child(self, node):
+    def set_left_child(self, node: 'BSTNode'):
         self.left = node
         if not (node is None):
             node.parent = self
 
-    def set_right_child(self, node):
+    def set_right_child(self, node: 'BSTNode'):
         self.right = node
         if not (node is None):
             node.parent = self
 
-    def get_right_child(self):
+    def get_right_child(self) -> 'BSTNode':
         return self.right
 
-    def get_left_child(self):
+    def get_left_child(self) -> 'BSTNode':
         return self.left
 
     def get_data(self):
@@ -44,7 +44,7 @@ class BSTNode:
     def update_size(self):
         self.size = self.size + 1
 
-    def get_children_max_height(self):
+    def get_children_max_height(self) -> int:
         if self.has_right_child() and self.has_left_child():
             return max(self.left.height, self.right.height)
         if self.has_left_child() and not self.has_right_child():
@@ -57,7 +57,7 @@ class BSTNode:
     def update_height(self):
         self.height = self.get_children_max_height() + 1
 
-    def get_balance(self, node):
+    def get_balance(self) -> int:
         if self.has_right_child() and self.has_left_child():
             return self.right.height - self.left.height
         if self.has_left_child() and not self.has_right_child():
@@ -67,7 +67,7 @@ class BSTNode:
         if not (self.has_left_child() or self.has_right_child()):
             return 0
 
-    def get_parent(self):
+    def get_parent(self) -> 'BSTNode':
         return self.parent
 
     def right_rotate(self):
@@ -76,10 +76,15 @@ class BSTNode:
         beta = y.get_right_child()
         y.set_right_child(self)
         self.set_left_child(beta)
-        if parent.get_left_child() == self:
+        if parent is not None and parent.get_left_child() is self:
             parent.set_left_child(y)
-        else:
+        elif parent is not None and parent.get_right_child() is self:
             parent.set_right_child(y)
+        elif parent is None:
+            y.set_parent(None)
+
+        self.update_height()
+        y.update_height()
 
     def left_rotate(self):
         x = self.get_right_child()
@@ -87,13 +92,18 @@ class BSTNode:
         beta = x.get_left_child()
         x.set_left_child(self)
         self.set_right_child(beta)
-        if parent.get_left_child() == self:
+        if parent is not None and parent.get_left_child() is self:
             parent.set_left_child(x)
-        else:
+        elif parent is not None and parent.get_right_child() is self:
             parent.set_right_child(x)
+        elif parent is None:
+            x.set_parent(None)
 
-    def get_height(self):
-        return  self.height
+        self.update_height()
+        x.update_height()
+
+    def get_height(self) -> int:
+        return self.height
 
     def display(self):
         lines, *_ = self._display_aux()
@@ -163,10 +173,19 @@ class BST:
     def is_root(self, node):
         return self.root == node
 
+    def lca(self, first, second):
+        node = self.root
+        while True:
+            if node.data > first and node.data > second:
+                node = node.get_left_child()
+            elif node.data < first and node.data < second:
+                node = node.get_right_child()
+            else:
+                return node
+
     @staticmethod
-    def update_heights(node):
-        temp = node.parent
-        print(node)
+    def update_heights(node: 'BSTNode'):
+        temp = node
         while temp.parent:
             temp.update_height()
             temp = temp.parent
@@ -176,10 +195,10 @@ class BST:
     def get_height(self):
         return self.root.height
 
-    def insert(self, data):
+    def _insert(self, data: int):
+        new_node = BSTNode(data)
         if self.root:
             node = self.root
-            new_node = BSTNode(data)
             while True:
                 node.update_size()
                 if data >= node.get_data():
@@ -196,9 +215,14 @@ class BST:
                         node.set_left_child(new_node)
                         new_node.set_parent(node)
                         break
-            BST.update_heights(new_node)
         else:
             self.root = BSTNode(data)
+
+        return new_node
+
+    def insert(self, data: int):
+        new_node = self._insert(data)
+        BST.update_heights(new_node)
 
     def __str__(self):
         if self.root.has_left_child():
@@ -210,9 +234,12 @@ class BST:
 
 if __name__ == '__main__':
     bst = BST()
-    bst.insert(34)
-    bst.insert(35)
-    bst.insert(36)
-    bst.insert(37)
     bst.insert(38)
+    bst.insert(54)
+    bst.insert(57)
+    bst.insert(42)
+    bst.insert(33)
+    bst.insert(34)
+    bst.insert(27)
+    bst.insert(35)
     bst.display()
