@@ -235,11 +235,12 @@ class BST:
 if __name__ == '__main__':
     bst = BST()
     bst.insert(38)
+    bst.insert(39)
+    bst.insert(40)
+    bst.insert(50)
+    bst.insert(51)
+    bst.insert(52)
+    bst.insert(53)
     bst.insert(54)
-    bst.insert(57)
-    bst.insert(42)
-    bst.insert(33)
-    bst.insert(34)
-    bst.insert(27)
-    bst.insert(35)
+
     bst.display()
